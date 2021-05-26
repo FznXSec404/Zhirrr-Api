@@ -3158,7 +3158,7 @@ router.get('/yutub/audio', async (req, res, next) => {
 	if(apikeyInput != 'alpin1') return res.json(loghandler.invalidKey)
     if (!url) return res.json({ status : false,  message : "masukan parameter url"})
 
-       fetch(encodeURI(`https://api.xteam.xyz/dl/ytmp3?url=${url}&APIKEY=APIKEYMU`))
+       fetch(encodeURI(`https://api.xteam.xyz/dl/ytmp3?url=${url}&APIKEY=b503570de94469fc`))
         .then(response => response.json())
         .then(data => {
         var result = data;
