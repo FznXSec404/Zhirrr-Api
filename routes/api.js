@@ -4046,8 +4046,8 @@ router.get('/nulis', async (req, res, next) => {
 
        hasil = (`https://hadi-api.herokuapp.com/api/nulis?teks=${text}`)
      data = await fetch(hasil).then(v => v.buffer())
-         await fs.writeFileSync('tolol.png', data)
-        res.sendFile(__path+'/tolol.png')
+         await ('tolol.png', data)
+        (__path+'/tolol.png')
          .catch(e => {
          	res.json(loghandler.error)
 })
