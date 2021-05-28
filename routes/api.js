@@ -5771,20 +5771,4 @@ router.get('/vidio/tiktok', async (req, res, next) => {
 })
 })
 
-router.get('/tts', async (req, res, next) => {
-        var apikeyInput = req.query.apikey
-            text = req.query.text
-            
-	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'alpin1') return res.json(loghandler.invalidKey)
-	if (!text) return res.json({ status : false,  message : "masukan parameter username"})
-
-       fetch(encodeURI(`https://python-jepri.herokuapp.com/api/tts?text=${text}&key=Kagami`))      
-             })
-         })
-         .catch(e => {
-         	res.json(loghandler.error)
-})
-})
-
 module.exports = router
