@@ -5731,4 +5731,60 @@ router.get('/truth', async (req, res, next) => {
 })
 })
 
+router.get('/dare', async (req, res, next) => {
+        var apikeyInput = req.query.apikey
+            
+	if(!apikeyInput) return res.json(loghandler.notparam)
+	if(apikeyInput != 'alpin1') return res.json(loghandler.invalidKey)
+
+       fetch(encodeURI(`https://python-jepri.herokuapp.com/api/dare?key=Kagami`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+                 
+                 data
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
+router.get('/vidio/tiktok', async (req, res, next) => {
+        var apikeyInput = req.query.apikey
+            
+	if(!apikeyInput) return res.json(loghandler.notparam)
+	if(apikeyInput != 'alpin1') return res.json(loghandler.invalidKey)
+
+       fetch(encodeURI(`https://python-jepri.herokuapp.com/api/ptlmp4?key=Kagami`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+                 
+                 data
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
+router.get('/tts', async (req, res, next) => {
+        var apikeyInput = req.query.apikey
+            text = req.query.text
+            
+	if(!apikeyInput) return res.json(loghandler.notparam)
+	if(apikeyInput != 'alpin1') return res.json(loghandler.invalidKey)
+	if (!text) return res.json({ status : false,  message : "masukan parameter username"})
+
+       fetch(encodeURI(`https://python-jepri.herokuapp.com/api/tts?text=${text}&key=Kagami`))      
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
 module.exports = router
