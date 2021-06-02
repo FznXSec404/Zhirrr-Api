@@ -5843,7 +5843,7 @@ router.get('/covid-india', async (req, res, next) => {
         var result = data;
              res.json({
                  
-                 result
+                 data
              })
          })
          .catch(e => {
@@ -5874,14 +5874,14 @@ router.get('/nasa', async (req, res, next) => {
 router.get('/url/topdf', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             name = req.query.name
-            url = req.query.url
+            link = req.query.link
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'alpin1') return res.json(loghandler.invalidKey)
 	if (!name) return res.json({ status : false,  message : "masukan parameter name"})
-	if (!url) return res.json({ status : false,  message : "masukan parameter url"})
+	if (!link) return res.json({ status : false,  message : "masukan parameter url"})
 
-       fetch(encodeURI(`https://url-to-pdf-api.herokuapp.com/api/render?url=${url}&attachmentName=${name}`))
+       fetch(encodeURI(`https://obscure-fortress-03716.herokuapp.com/api/render?url=${link}&attachmentName=${name}`))
         .then(response => response.json())
         .then(data => {
         var result = data;
