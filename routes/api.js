@@ -5878,7 +5878,8 @@ router.get('/url/topdf', async (req, res, next) => {
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'alpin1') return res.json(loghandler.invalidKey)
-	if (!username) return res.json({ status : false,  message : "masukan parameter username"})
+	if (!name) return res.json({ status : false,  message : "masukan parameter name"})
+	if (!url) return res.json({ status : false,  message : "masukan parameter url"})
 
        fetch(encodeURI(`https://url-to-pdf-api.herokuapp.com/api/render?url=${url}&attachmentName=${name}`))
         .then(response => response.json())
