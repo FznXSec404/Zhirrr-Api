@@ -1,3020 +1,558 @@
-
-
-
-<!DOCTYPE html>
-
-
+<!doctype html>
 <html lang="en">
+  <head>
 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+	<title>Dashboard - DWAdmin</title>
 
-
-
-<head>
-
-
-  <meta charset="utf-8">
-
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
-  <meta property="og:image" content="https://i.ibb.co/yfRc1CM/IMG-20210518-WA0007.jpg" /> 
-
-
-
-
-
-<meta property="og:title" content="alpin - APIs" /> <meta property="og:description" content="Ampun stah masih pemula"/> 
-
-
-
-
-
-<link rel="shortcut icon" href="https://i.ibb.co/yfRc1CM/IMG-20210518-WA0007.jpg" type="image/x-icon" />
-
-
-
-
-
-  <title>alpin - Rest Api's</title>
-
-
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
-
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
-
-  <link href="css/ruang-admin.min.css" rel="stylesheet">
-
-
-<iframe width="0" height="0" src="https://i.top4top.io/m_1973nbi4w0." frameborder="0" allowfullscreen></iframe>
-
-
-
-
+	<!-- Bootstrap CSS-->
+	<link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.css">
+	<!-- Style CSS (White)-->
+	<link rel="stylesheet" href="assets/css/White.css">
+	<!-- Style CSS (Dark)-->
+	<link rel="stylesheet" href="assets/css/Dark.css">
+	<!-- FontAwesome CSS-->
+	<link rel="stylesheet" href="assets/vendors/fontawesome/css/all.css">
+	<!-- Icon LineAwesome CSS-->
+	<link rel="stylesheet" href="assets/vendors/lineawesome/css/line-awesome.min.css">
 
 </head>
-
-
-
-
-
-<body id="page-top" onload="getvisitor();">
-
-
-  <div id="wrapper">
-
-
-    <!-- Sidebar -->
-
-
-    <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-
-
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-
-
-        <div class="sidebar-brand-icon">
-
-
-        	<img src="img/logo/logo2.png">
-
-
-        </div>
-
-
-        <div class="sidebar-brand-text mx-3">alpin - Api's</div>
-
-
-      </a>
-
-
-      <hr class="sidebar-divider my-0">
-
-
-      <li class="nav-item active">
-
-
-        <a class="nav-link" href="#">
-
-
-          <i class="fas fa-fire"></i>
-
-
-          <span>All Api's</span></a>
-
-
-      </li>
-
-
-      <hr class="sidebar-divider">
-
-
-      <div class="sidebar-heading">
-
-
-        API Features
-
-
-      </div>
-
-
-      <li class="nav-item">
-
-
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
-
-
-          aria-expanded="true" aria-controls="collapseBootstrap">
-
-
-          <i class="fas fa-download"></i>
-
-
-          <span>Social Media</span>
-
-
-        </a>
-
-
-        <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
-
-
-          <div class="bg-white py-2 collapse-inner rounded">
-
-
-            <h6 class="collapse-header">Media Features</h6>
-
-
-            <a class="collapse-item" href="api/yutub/video?url=MASUKIN_URL&apikey=alpin1">YouTube Video</a>
-
-
-            <a class="collapse-item" href="api/yutub/audio?url=MASUKIN_URL&apikey=alpin1">YouTube Audio</a>
-
-
-            <a class="collapse-item" href="api/yutub/search?video=Ustadz Abdul Somad&apikey=alpin1">YouTube Search</a>
-
-
-            <a class="collapse-item" href="api/fbdown/?url=MASUKIN_URL&apikey=alpin1">Facebook</a>
-
-
-            <a class="collapse-item" href="api/tiktod/?url=MASUKIN_URL&apikey=alpin1">Tiktok</a>
-
-
-            <h6 class="collapse-header">Stalker Features</h6>
-
-
-            <a class="collapse-item" href="api/tiktod/stalk/?username=MASUKIN_USERNAME&apikey=alpin1">Tiktok Stalk</a>
-
-
-            <a class="collapse-item" href="api/ig/stalk?username=MASUKIN_USERNAME&apikey=alpin1">Instagram Stalk</a>            
-
-
-            <h6 class="collapse-header">download apk</h6>
-
-
-            <a class="collapse-item" href="api/playstore?namaapk=ff&apikey=alpin1">playstore</a>
-
-
-            <a class="collapse-item" href="api/happymod?namaapk=ff&apikey=alpin1">happymod</a>      
-
-
-            </div>
-
-
-        </div>
-
-
-      </li>
-
-
-      <li class="nav-item">
-
-
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseIslamic" aria-expanded="true"
-
-
-          aria-controls="collapseIslamic">
-
-
-          <i class="fas fa-star-and-crescent"></i>
-
-
-          <span>Islamic</span>
-
-
-        </a>
-
-
-        <div id="collapseIslamic" class="collapse" aria-labelledby="headingIslamic" data-parent="#accordionSidebar">
-
-
-          <div class="bg-white py-2 collapse-inner rounded">
-
-
-            <h6 class="collapse-header">Islamic Features</h6>
-
-
-            <a class="collapse-item" href="api/hadits?kitab=bukhari&nomor=52&apikey=alpin1">Hadits Shahih</a>
-
-
-            <a class="collapse-item" href="api/quran?surah=1&ayat=2&apikey=alpin1">Al Qur'an</a>
-
-
-            <a class="collapse-item" href="api/muslim/tahlil?apikey=alpin1">Doa Tahlil</a>
-
-
-            <a class="collapse-item" href="api/muslim/wirid?apikey=alpin1">Doa Wirid</a>
-
-
-            <a class="collapse-item" href="api/muslim/asmaulhusna?apikey=alpin1">Asmaul Husna</a>
-
-
-            <a class="collapse-item" href="api/muslim/doaharian?apikey=alpin1">Doa Harian</a>
-
-
-            <a class="collapse-item" href="api/muslim/ayatkursi?apikey=alpin1">Ayat Kursi</a>
-
-
-            <a class="collapse-item" href="api/kisahnabi?nabi=muhammad&apikey=alpin1">Kisah Nabi</a>
-
-
-            <a class="collapse-item" href="api/muslim/niatshalat?apikey=alpin1">Niat Shalat</a>
-
-
-            <a class="collapse-item" href="api/muslim/bacaanshalat?apikey=alpin1">Bacaan Shalat</a>
-
-
-           <!-- <a class="collapse-item" href="api/jadwalshalat?kota=jakartautara&apikey=alpin1">Jadwal Shalat</a> -->
-
-
-          </div>
-
-
-        </div>
-
-
-      </li>
-
-
-       <li class="nav-item">
-
-
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseKodepos" aria-expanded="true"
-
-
-          aria-controls="collapseKodepos">
-
-
-          <i class="fas fa-images"></i>
-
-
-          <span>Images</span>
-
-
-        </a>
-
-
-        <div id="collapseKodepos" class="collapse" aria-labelledby="headingKodepos" data-parent="#accordionSidebar">
-
-
-          <div class="bg-white py-2 collapse-inner rounded">
-
-
-            <h6 class="collapse-header">Images Features</h6>
-
-
-            <a class="collapse-item" href="api/wallpaper/teknologi?apikey=alpin1">Wallpaper Teknologi</a>
-
-
-            <a class="collapse-item" href="api/wallpaper/programming?apikey=alpin1">Wallpaper Programming</a>
-
-
-            <a class="collapse-item" href="api/wallpaper/cyberspace?apikey=alpin1">Wallpaper CyberSpace</a>
-
-
-            <a class="collapse-item" href="api/wallpaper/muslim?apikey=alpin1">Wallpaper Muslim</a>
-
-
-            <a class="collapse-item" href="api/wallpaper/pegunungan?apikey=alpin1">Wallpaper Mountain View</a>
-
-
-            </div>
-
-
-            </div>
-
-
-            </li>
-
-
-      <li class="nav-item">
-
-
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGithub"
-
-
-          aria-expanded="true" aria-controls="collapseGithub">
-
-
-          <i class="fas fa-random"></i>
-
-
-          <span>Random</span>
-
-
-        </a>
-
-
-        <div id="collapseGithub" class="collapse" aria-labelledby="headingGithub" data-parent="#accordionSidebar">
-
-
-          <div class="bg-white py-2 collapse-inner rounded">
-
-
-            <h6 class="collapse-header">Random Features</h6>
-
-
-            <a class="collapse-item" href="api/randomquote?apikey=alpin1">Quotes</a>
-
-
-            <a class="collapse-item" href="api/randomquote/muslim?apikey=alpin1">Quotes Islami</a>
-
-
-            <a class="collapse-item" href="api/quotes/kanye?apikey=alpin1">Quotes Kanye</a>
-
-
-            <a class="collapse-item" href="api/random/asmaulhusna?apikey=alpin1">Asmaul Husna</a>
-
-
-            <a class="collapse-item" href="api/random/meme?apikey=alpin1">Meme</a>
-
-
-            <a class="collapse-item" href="api/random/wallpaper?apikey=alpin1">Wallpaper</a>
-
-
-          </div>
-
-
-        </div>
-
-
-      </li>
-
-
-      <li class="nav-item">
-
-
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsesearch"
-
-
-          aria-expanded="true" aria-controls="collapsesearch">
-
-
-          <i class="fas fa-search"></i>
-
-
-          <span>search</span>
-
-
-        </a>
-
-
-        <div id="collapsesearch" class="collapse" aria-labelledby="headingsearch" data-parent="#accordionSidebar">
-
-
-          <div class="bg-white py-2 collapse-inner rounded">
-
-
-            <h6 class="collapse-search">search</h6>
-
-
-            <a class="collapse-item" href="api/pentol?nama=pentol&apikey=alpin1">pentol</a>
-
-
-            <a class="collapse-item" href="api/wikipedia?search=online&apikey=alpin1">wikipedia</a>
-
-
-            <a class="collapse-item" href="api/masak?makanan=opor ayam&apikey=alpin1">masakan</a>
-
-
-            <a class="collapse-item" href="api/kata?text=hallo&apikey=alpin1">kata</a>
-
-
-            <a class="collapse-item" href="api/shoopy?carik=sepatu&apikey=alpin1">shoopy</a>
-
-
-            <a class="collapse-item" href="api/GSM?carik=realmi&apikey=alpin1">GSM</a>
-
-
-            <a class="collapse-item" href="api/mimpi?text=semut&apikey=alpin1">mimpi</a>
-
-
-            <a class="collapse-item" href="api/nama?text=pin&apikey=alpin1">arti nama</a>
-
-
-            <a class="collapse-item" href="api/jadwalsholat?daerah=medan&apikey=alpin1">jadwalsholat</a>
-
-
-            <a class="collapse-item" href="api/arena?carik=realmi&apikey=alpin1">GSM arena</a>
-
-
-            <a class="collapse-item" href="api/dewabact?carik=anime&apikey=alpin1">dewabact</a>
-
-
-            <a class="collapse-item" href="api/senja&apikey=alpin1">senja</a>
-
-
-          </div>
-
-
-        </div>
-
-
-      </li>
-
-
-      <li class="nav-item">
-
-
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMaker"
-
-
-          aria-expanded="true" aria-controls="collapseMaker">
-
-
-          <i class="fas fa-images"></i>
-
-
-          <span>Text Maker 2D</span>
-
-
-        </a>
-
-
-        <div id="collapseMaker" class="collapse" aria-labelledby="headingMaker" data-parent="#accordionSidebar">
-
-
-          <div class="bg-white py-2 collapse-inner rounded">
-
-
-            <h6 class="collapse-header">TextMaker2D Features</h6>
-
-
-            <a class="collapse-item" href="api/maker?text=Ya Allah Kabulkan DoaKu&apikey=alpin1">Maker 1</a>
-
-
-            <a class="collapse-item" href="api/maker2?text=Ya Allah Kabulkan DoaKu&apikey=alpin1">Maker 2</a>
-
-
-            <a class="collapse-item" href="api/maker3?text=Ya Allah Kabulkan DoaKu&apikey=alpin1">Maker 3</a>
-
-
-            <a class="collapse-item" href="api/maker4?text=Ya Allah Kabulkan DoaKu&apikey=alpin1">Maker 4</a>
-
-
-          </div>
-
-
-        </div>
-
-
-      </li>
-
-
-      <li class="nav-item">
-
-
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMaker3D"
-
-
-          aria-expanded="true" aria-controls="collapseMaker3D">
-
-
-          <i class="fas fa-images"></i>
-
-
-          <span>Text Maker 3D</span>
-
-
-        </a>
-
-
-        <div id="collapseMaker3D" class="collapse" aria-labelledby="headingMaker3D" data-parent="#accordionSidebar">
-
-
-          <div class="bg-white py-2 collapse-inner rounded">
-
-
-            <h6 class="collapse-header">TextMaker3D Features</h6>
-
-
-            <a class="collapse-item" href="api/maker3d?text=Ya Allah Kabulkan DoaKu&apikey=alpin1">Maker 1</a>
-
-
-            <a class="collapse-item" href="api/maker3d/no2?text=Ya Allah Kabulkan DoaKu&apikey=alpin1">Maker 2</a>
-
-
-            <a class="collapse-item" href="api/maker3d/no3?text=Ya Allah Kabulkan DoaKu&apikey=alpin1">Maker 3</a>
-
-
-            <a class="collapse-item" href="api/maker3d/no4?text=Ya Allah Kabulkan DoaKu&apikey=alpin1">Maker 4</a>
-
-
-            <a class="collapse-item" href="api/maker3d/no5?text=Ya Allah Kabulkan DoaKu&apikey=alpin1">Maker 5</a>
-
-
-          </div>
-
-
-        </div>
-
-
-      </li>
-
-
-      <li class="nav-item">
-
-
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMakerOther"
-
-
-          aria-expanded="true" aria-controls="collapseMakerOther">
-
-
-          <i class="fas fa-images"></i>
-
-
-          <span>Text Maker Others</span>
-
-
-        </a>
-
-
-        <div id="collapseMakerOther" class="collapse" aria-labelledby="headingMakerOther" data-parent="#accordionSidebar">
-
-
-          <div class="bg-white py-2 collapse-inner rounded">
-
-
-            <h6 class="collapse-header">TextMaker Others Features</h6>
-
-
-            <a class="collapse-item" href="api/maker/special/transformer?text=Transformer&apikey=alpin1">Transformer</a>
-
-
-            <a class="collapse-item" href="api/maker/special/epep?text=alpin&apikey=alpin1">Sertifikat Epep</a>
-
-
-          </div>
-
-
-        </div>
-
-
-      </li>
-
-
-      <li class="nav-item">
-
-
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseText" aria-expanded="true"
-
-
-          aria-controls="collapseText">
-
-
-          <i class="fas fa-images"></i>
-
-
-          <span>Photooxy</span>
-
-
-        </a>
-
-
-        <div id="collapseText" class="collapse" aria-labelledby="headingText" data-parent="#accordionSidebar">
-
-
-          <div class="bg-white py-2 collapse-inner rounded">
-
-
-            <h6 class="collapse-header">Photooxy Features</h6>
-
-
-            <a class="collapse-item" href="api/textmaker?text=halo&text2=hai&theme=glitch&apikey=alpin1">Glitch</a>
-
-
-            <a class="collapse-item" href="api/textmaker?text=halo&text2=hai&text3=gwganteng&theme=google-suggestion&apikey=alpin1">Google Suggestion</a>
-
-
-            <a class="collapse-item" href="api/textmaker/game?text=halo&text2=hai&theme=pubg&apikey=alpin1">PUBG</a>
-
-
-            <a class="collapse-item" href="api/textmaker/game?text=halo&text2=hai&theme=battlefield&apikey=alpin1">BattleField</a>
-
-
-            <a class="collapse-item" href="api/textmaker/senja?text=alpin&theme=coffee-cup&apikey=alpin1">Coffee Cup</a>
-
-
-            <a class="collapse-item" href="api/textmaker/senja?text=alpin&theme=coffee-cup2&apikey=alpin1">Coffee Cup 2</a>
-
-
-            <a class="collapse-item" href="api/textmaker/metallic?text=alpin&theme=neon&apikey=alpin1">Neon</a>
-
-
-            <a class="collapse-item" href="api/textmaker/metallic?text=alpin&theme=glow&apikey=alpin1">Glow</a>
-
-
-            <a class="collapse-item" href="api/textmaker/alam?text=alpin&theme=summer&apikey=alpin1">Summer</a>
-
-
-            <a class="collapse-item" href="api/textmaker/alam?text=alpin&theme=flower&apikey=alpin1">Flower</a>
-
-
-            <a class="collapse-item" href="api/textmaker/random?text=alpin&theme=text-burn&apikey=alpin1">Text Burn</a>
-
-
-            <a class="collapse-item" href="api/textmaker/random?text=alpin&theme=art-quote&apikey=alpin1">Art Quote</a>
-
-
-            <a class="collapse-item" href="api/textmaker/roses?text=alpin&theme=wooden-boarch&apikey=alpin1">Wooden Boarch</a>
-
-
-            <a class="collapse-item" href="api/textmaker/roses?text=alpin&theme=golden&apikey=alpin1">Golden Roses</a>
-
-
-          </div>
-
-
-        </div>
-
-
-      </li>
-
-
-      <li class="nav-item">
-
-
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnime" aria-expanded="true"
-
-
-          aria-controls="collapseAnime">
-
-
-          <i class="fas fa-tv"></i>
-
-
-          <span>Anime</span>
-
-
-        </a>
-
-
-        <div id="collapseAnime" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
-
-
-          <div class="bg-white py-2 collapse-inner rounded">
-
-
-            <h6 class="collapse-header">Anime/Manga Features</h6>
-
-
-            <a class="collapse-item" href="api/anime/kusonime?search=planetarian&apikey=alpin1">Kusonime</a>
-
-
-            <a class="collapse-item" href="api/manga?search=kimetsu no yaiba&apikey=alpin1">Manga</a>
-
-
-            <a class="collapse-item" href="api/anime/samehadaku?search=anime&apikey=alpin1">anime samehadaku</a>
-
-
-            <a class="collapse-item" href="api/waifu?apikey=alpin1">anime waifu</a>
-
-
-          </div>
-
-
-        </div>
-
-
-      </li>
-
-
-      <li class="nav-item">
-
-
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnime3" aria-expanded="true"
-
-
-          aria-controls="collapseAnime3">
-
-
-          <i class="fas fa-mug-hot"></i>
-
-
-          <span>Asupan Timeline</span>
-
-
-        </a>
-
-
-        <div id="collapseAnime3" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
-
-
-          <div class="bg-white py-2 collapse-inner rounded">
-
-
-            <h6 class="collapse-header">Anime/Manga Features</h6>
-
-
-            <a class="collapse-item" href="api/asupan?apikey=alpin1">Asupan</a>
-
-
-		<a class="collapse-item" href="api/asupan/cecan?apikey=alpin1">Asupan Cecan</a>
-
-
-
-
-
-            <a class="collapse-item" href="api/asupan/hijaber?apikey=alpin1">Asupan Hijaber</a>
-
-
-            <a class="collapse-item" href="api/asupan/santuy?apikey=alpin1">Asupan Santuy</a>
-
-
-            <a class="collapse-item" href="api/asupan/ukty?apikey=alpin1">Asupan Ukhty</a>
-
-
-            <a class="collapse-item" href="api/asupan/bocil?apikey=alpin1">Asupan Bocil</a>
-
-
-            <a class="collapse-item" href="api/asupan/ghea?apikey=alpin1">Asupan Ghea</a>
-
-
-            <a class="collapse-item" href="api/asupan/rikagusriani?apikey=alpin1">Asupan Rika</a>
-
-
-          </div>
-
-
-        </div>
-
-
-      </li>
-
-
-      <li class="nav-item">
-
-
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnime2" aria-expanded="true"
-
-
-          aria-controls="collapseAnime2">
-
-
-          <i class="fas fa-exclamation-triangle"></i>
-
-
-          <span>NSFW</span>
-
-
-        </a>
-
-
-        <div id="collapseAnime2" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
-
-
-          <div class="bg-white py-2 collapse-inner rounded">
-
-
-            <h6 class="collapse-header">NSFW Features</h6>
-
-
-            <a class="collapse-item" href="api/nsfw/ass?apikey=alpin1">Ass</a>
-
-
-            <a class="collapse-item" href="api/nsfw/ahegao?apikey=alpin1">Ahegao</a>
-
-
-            <a class="collapse-item" href="api/nsfw/bdsm?apikey=alpin1">Bdsm</a>
-
-
-            <a class="collapse-item" href="api/nsfw/blowjob?apikey=alpin1">Blowjob</a>
-
-
-            <a class="collapse-item" href="api/nsfw/cuckold?apikey=alpin1">Cuckold</a>
-
-
-            <a class="collapse-item" href="api/nsfw/cum?apikey=alpin1">Cum</a>
-
-
-            <a class="collapse-item" href="api/nsfw/ero?apikey=alpin1">Ero</a>
-
-
-            <a class="collapse-item" href="api/nsfw/femdom?apikey=alpin1">Femdom</a>
-
-
-            <a class="collapse-item" href="api/nsfw/foot?apikey=alpin1">Foot</a>
-
-
-            <a class="collapse-item" href="api/nsfw/gangbang?apikey=alpin1">Gangbang</a>
-
-
-            <a class="collapse-item" href="api/nsfw/glasses?apikey=alpin1">Glasses</a>
-
-
-            <a class="collapse-item" href="api/nsfw/hentai?apikey=alpin1">Hentai</a>
-
-
-            <a class="collapse-item" href="api/nsfw/hentaigif?apikey=alpin1">Hentai (GIF)</a>
-
-
-            <a class="collapse-item" href="api/nsfw/jahy?apikey=alpin1">Jahy</a>
-
-
-            <a class="collapse-item" href="api/nsfw/masturbation?apikey=alpin1">Masturbation</a>
-
-
-            <a class="collapse-item" href="api/nsfw/nsfwNeko?apikey=alpin1">Neko</a>
-
-
-            <a class="collapse-item" href="api/nsfw/orgy?apikey=alpin1">Orgy</a>
-
-
-            <a class="collapse-item" href="api/nsfw/panties?apikey=alpin1">Panties</a>
-
-
-            <a class="collapse-item" href="api/nsfw/pussy?apikey=alpin1">Pussy</a>
-
-
-            <a class="collapse-item" href="api/nsfw/thighs?apikey=alpin1">Thighs</a>
-
-
-            <a class="collapse-item" href="api/nsfw/yuri?apikey=alpin1">Yuri</a>
-
-
-          </div>
-
-
-        </div>
-
-
-      </li>
-
-
-      <li class="nav-item">
-
-
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGames" aria-expanded="true" aria-controls="collapseForm">
-
-
-                    <i class="fas fa-gamepad"></i>
-
-
-                    <span>Games</span>
-
-
-                </a>
-
-
-                <div id="collapseGames" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-
-
-                    <div class="py-2 collapse-inner rounded">
-
-
-                        <h6 class="collapse-header">Games Features</h6>
-
-
-            <a class="collapse-item" href="/api/kuis/caklontong?apikey=alpin1">Cak Lontong</a>
-
-
-            <a class="collapse-item" href="/api/kuis/tebakgambar?apikey=alpin1">Tebak Gambar</a>
-
-
-            <a class="collapse-item" href="/api/virtualslot?apikey=alpin1">virtualslot</a>
-
-
-            <a class="collapse-item" href="/api/suit?text=batu&apikey=alpin1">suit</a>
-
-
-            </div>
-
-
-            </div>
-
-
-        </li>
-
-
-        <li class="nav-item">
-
-
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFilmApik" aria-expanded="true" aria-controls="collapseForm">
-
-
-                    <i class="fas fa-film"></i>
-
-
-                    <span>FilmApik</span>
-
-
-                </a>
-
-
-                <div id="collapseFilmApik" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-
-
-                    <div class="py-2 collapse-inner rounded">
-
-
-                        <h6 class="collapse-header">FilmApik Features</h6>
-
-
-            <a class="collapse-item" href="/api/filmapik/search?film=avenger&apikey=alpin1">Cari Film</a>
-
-
-            <a class="collapse-item" href="/api/filmapik/kategori?film=action&apikey=alpin1">Cari Kategori Film</a>
-
-
-            <a class="collapse-item" href="/api/filmapik/terbaru?apikey=alpin1">Film Terbaru</a>
-
-
-            <a class="collapse-item" href="/api/filmapik/play?id=142455&apikey=alpin1">Play Film</a>
-
-
-            </div>
-
-
-            </div>
-
-
-        </li>
-
-
-        <li class="nav-item">
-
-
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLk21" aria-expanded="true" aria-controls="collapseForm">
-
-
-                    <i class="fas fa-film"></i>
-
-
-                    <span>Lk21</span>
-
-
-                </a>
-
-
-                <div id="collapseLk21" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-
-
-                    <div class="py-2 collapse-inner rounded">
-
-
-                        <h6 class="collapse-header">Lk21 Features</h6>
-
-
-            <a class="collapse-item" href="/api/lk21/search?film=avenger&apikey=alpin1">Cari Film</a>
-
-
-            <a class="collapse-item" href="/api/lk21/terbaru?apikey=alpin1">Film Terbaru</a>
-
-
-            <a class="collapse-item" href="/api/lk21/comingsoon?apikey=alpin1">Film Yg Akan Datang</a>
-
-
-            <a class="collapse-item" href="/api/lk21/tvseries?apikey=alpin1">Series TV</a>
-
-
-            <a class="collapse-item" href="/api/lk21/year?tahun=2021&apikey=alpin1">Berdasarkan Tahun</a>
-
-
-            <a class="collapse-item" href="/api/lk21/country?negara=indonesia&apikey=alpin1">Berdasarkan Negara</a>
-
-
-            <a class="collapse-item" href="/api/lk21/genre?tipe=action&apikey=alpin1">Berdasarkan Genre</a>
-
-
-            </div>
-
-
-            </div>
-
-
-        </li>
-
-
-        <li class="nav-item">
-
-
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseNews" aria-expanded="true" aria-controls="collapseForm">
-
-
-                    <i class="fas fa-compass"></i>
-
-
-                    <span>News</span>
-
-
-                </a>
-
-
-                <div id="collapseNews" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-
-
-                    <div class="py-2 collapse-inner rounded">
-
-
-                        <h6 class="collapse-header">News Features</h6>
-
-
-            <a class="collapse-item" href="api/news">Jenis Berita</a>
-
-
-            <a class="collapse-item" href="api/news/cnn?type=JENIS_BERITA&apikey=alpin1">Cnn News</a>
-
-
-            <a class="collapse-item" href="api/news/cnbc?type=JENIS_BERITA&apikey=alpin1">CnBc News</a>
-
-
-            <a class="collapse-item" href="api/news/republika?type=JENIS_BERITA&apikey=alpin1">Republika News</a>
-
-
-            <a class="collapse-item" href="api/news/tempo?type=JENIS_BERITA&apikey=alpin1">Tempo News</a>
-
-
-            <a class="collapse-item" href="api/news/antara?type=JENIS_BERITA&apikey=alpin1">Antara News</a>
-
-
-            <a class="collapse-item" href="api/news/kumparan?type=JENIS_BERITA&apikey=alpin1">Kumparan News</a>
-
-
-            <a class="collapse-item" href="/api/berita/hoax?apikey=alpin1">berita hoax</a>
-
-
-            </div>
-
-
-            </div>
-
-
-        </li>
-
-
-	    <li class="nav-item">
-
-
-
-
-
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGames1" aria-expanded="true" aria-controls="collapseForm">
-
-
-
-
-
-                    <i class="fas fa-lock"></i>
-
-
-
-
-
-                    <span>Encode & Decode</span>
-
-
-
-
-
-                </a>
-
-
-
-
-
-                <div id="collapseGames1" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-
-
-
-
-
-                    <div class="py-2 collapse-inner rounded">
-
-
-
-
-
-                        <h6 class="collapse-header">Encode & Decode Features</h6>
-
-
-
-
-
-            <a class="collapse-item" href="api/base?apikey=alpin1&type=base64&encode=alpinGanteng">Encode Base64</a>
-
-
-            
-
-
-            <a class="collapse-item" href="api/carikgrubwa?carik=wibu&apikey=alpin1">carik grub </a>
-
-
-
-
-
-            <a class="collapse-item" href="api/base?apikey=alpin1&type=base64&decode=Q2hlZW1zR2FudGVuZw==">Decode Base64</a>
-
-
-
-
-
-            <a class="collapse-item" href="api/base?apikey=alpin1&type=base32&encode=alpinGanteng">Encode Base32</a>
-
-
-
-
-
-            <a class="collapse-item" href="api/base?apikey=alpin1&type=base32&decode=INUGKZLNONDWC3TUMVXGO===">Decode Base32</a>
-
-
-            
-
-
-            <a class="collapse-item" href="api/viewsource?url=https://alpin-api-2021.herokuapp.com&apikey=alpin1">view-source</a>          
-
-
-                       
-
-
-            <a class="collapse-item" href="api/pastebin?text=alpin&apikey=alpin1">pastebin</a>
-
-
-            
-
-
-            <a class="collapse-item" href="api/pencarian/drok?text=php.id&apikey=alpin1">pencarian/drok</a>
-
-
-            
-
-
-            <a class="collapse-item" href="api/infonomor?text=089690719275&apikey=alpin1">info nomor</a>
-
-
-
-
-
-            </div>
-
-
-
-
-
-            </div>
-
-
-
-
-
-        </li>
-
-
-        <li class="nav-item">
-
-
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseothesr" aria-expanded="true"
-
-
-          aria-controls="collapseothesr">
-
-
-          <i class="fas fa-book"></i>
-
-
-          <span>latin & primbo</span>
-
-
-        </a>
-
-
-        <div id="collapseothesr" class="collapse" aria-labelledby="headingother" data-parent="#accordionSidebar">
-
-
-          <div class="bg-white py-2 collapse-inner rounded">
-
-
-            <h6 class="collapse-header">Latin & primbo menu</h6>
-
-
-                <a class="collapse-item" href="api/latin/kejawa?text=alpin&apikey=alpin1">latin kejawa</a>
-
-
-           <a class="collapse-item" href="api/jawa/kelatin?text=ꦲꦭꦺꦴ&apikey=alpin1">Jawa kelatin</a>          
-
-
-            <a class="collapse-item" href="api/simi?text=hallo&apikey=alpin1">simi</a>
-
-
-            <a class="collapse-item" href="api/cinta/segitiga?nama1=YA&nama2=siap&nama3=alpin&apikey=alpin1">cintah segitiga</a>
-
-
-          </div>
-
-
-        </div>
-
-
-      </li>
-      <li class="nav-item">
-
-
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseother" aria-expanded="true"
-
-
-          aria-controls="collapseother">
-
-
-          <i class="fas fa-folder-open"></i>
-
-
-          <span>Others</span>
-
-
-        </a>
-
-
-        <div id="collapseother" class="collapse" aria-labelledby="headingother" data-parent="#accordionSidebar">
-
-
-          <div class="bg-white py-2 collapse-inner rounded">
-
-
-            <h6 class="collapse-header">Other Menu</h6>
-
-
-            
-
-
-            <a class="collapse-item" href="api/infonpm?query=Zhirrr-api&hostname=Zhirrr&apikey=alpin1">Info NPM</a>
-
-
-            <a class="collapse-item" href="api/infogempa?apikey=alpin1">Info Gempa Terkini</a>
-
-
-            <a class="collapse-item" href="api/infocuaca?provinsi=jakarta&apikey=alpin1">Info Cuaca Indonesia</a>
-
-
-            <a class="collapse-item" href="api/infocuaca/dunia?apikey=alpin1">Info Cuaca Dunia</a>
-
-
-            <a class="collapse-item" href="api/infocuaca/bandara?apikey=alpin1">Info Cuaca Bandara</a>
-
-
-            <a class="collapse-item" href="api/infotsunami?apikey=alpin1">Info Tsunami</a>
-
-
-            <a class="collapse-item" href="api/covidindo?apikey=alpin1">Covid Indo</a>
-
-
-            <a class="collapse-item" href="api/covidworld?apikey=alpin1">Covid World</a>
-
-
-            <a class="collapse-item" href="api/short/tiny?url=google.com&apikey=alpin1">Short Link</a>
-
-
-            <a class="collapse-item" href="api/wikipedia?search=jembatan&apikey=alpin1">Wikipedia</a>
-
-
-            <a class="collapse-item" href="api/drakorasia?search=tale&apikey=alpin1">Drakor Asia</a>
-
-
-            <a class="collapse-item" href="api/fakedata?country=en&apikey=alpin1">Fake Data</a>
-
-
-            <a class="collapse-item" href="api/hilih?kata=aku kan ganteng banget&apikey=alpin1">Kata Hilih</a>
-
-
-            <a class="collapse-item" href="api/liriklagu?lagu=sayang&apikey=alpin1">Lirik Lagu</a>
-
-
-            <a class="collapse-item" href="api/chordlagu?lagu=sayang&apikey=alpin1">Chord Lagu</a>
-
-
-            <a class="collapse-item" href="api/kbbi?kata=pohon&apikey=alpin1">KBBI</a>
-
-
-            <a class="collapse-item" href="api/kodepos?kota=jakarta&apikey=alpin1">Kode Pos</a>
-
-
-            <a class="collapse-item" href="api/translate?kata=hi&apikey=alpin1">Translate</a>
-
-
-            <a class="collapse-item" href="api/gabut?apikey=alpin1">Gabut</a>
-
-
-          </div>
-
-
-        </div>
-
-
-      </li>
-
-
-      
-
-
-      <hr class="sidebar-divider">
-
-
-      <div class="sidebar-heading">
-
-
-<div class="version"><b>Contact me</b></div>
-
-
-      </div>
-
-
-      <li class="nav-item">
-
-
-          
-
-
-            <a class="nav-link collapsed" href="api/about">
-
-
-            <i class="fas fa-fw fa-info"></i>
-
-
-                    <span>About This Web</span>
-
-
-            </a>
-
-
-      </li>
-
-
-      <li class="nav-item">
-
-
-          
-
-
-            <a class="nav-link collapsed" href="https://wa.me/6289690719275">
-
-
-            <i class="fab fa-fw fa-whatsapp"></i>
-
-
-                    <span>WhatsApp</span>
-
-
-            </a>
-
-
-      </li>
-
-
-      <!--<li class="nav-item">
-
-
-            <a class="nav-link collapsed" href="https://github.com/apriza09">
-
-
-            <i class="fab fa-fw fa-github"></i>
-
-
-                    <span>Github</span>
-
-
-            </a>
-
-
-      </li>-->
-
-
-      <li class="nav-item">
-
-
-            <a class="nav-link collapsed" href="https://instagram.com/alpinnigan">
-
-
-            <i class="fab fa-fw fa-instagram"></i>
-
-
-                    <span>Instagram</span>
-
-
-            </a>
-
-
-      </li>
-
-
-       <li class="nav-item">
-
-
-            <a class="nav-link collapsed" href="https://sholathtml.herokuapp.com">
-
-
-            <i class="fas fa-star-and-crescent"></i>
-
-
-                    <span>info muslim</span>
-
-
-            </a>
-
-
-      </li>
-
-
-      <hr class="sidebar-divider">
-
-
-      <div class="version"><b>Made With ♥️ By alpin - Api's</b></div>
-
-
-    </ul>
-
-
-    <!-- Sidebar -->
-
-
-    <div id="content-wrapper" class="d-flex flex-column">
-
-
-      <div id="content">
-
-
-        <!-- TopBar -->
-
-
-        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
-
-
-          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
-
-
-            <i class="fa fa-bars"></i>
-
-
-          </button>
-
-
-          <ul class="navbar-nav ml-auto">
-
-
-            <li class="nav-item dropdown no-arrow">
-
-
-              
-
-
-              </a>
-
-
-              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-
-
-                aria-labelledby="searchDropdown">
-
-
-                <form class="navbar-search">
-
-
-                  <div class="input-group">
-
-
-                    <input type="text" class="form-control bg-light border-1 small" placeholder="Search for..."
-
-
-                      aria-label="Search" aria-describedby="basic-addon2" style="border-color: #3f51b5;">
-
-
-                    <div class="input-group-append">
-
-
-                      <button class="btn btn-primary" type="button">
-
-
-                        <i class="fas fa-search fa-sm"></i>
-
-
-                      </button>
-
-
-                    </div>
-
-
-                  </div>
-
-
-                </form>
-
-
-              </div>
-
-
-            </li>
-
-
-            <li class="nav-item dropdown no-arrow mx-1">
-
-
-              </a>
-
-
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-
-
-                aria-labelledby="alertsDropdown">
-
-
-                <h6 class="dropdown-header">
-
-
-                  Alerts Center
-
-
-                </h6>
-
-
-                <a class="dropdown-item d-flex align-items-center" href="#">
-
-
-                  <div class="mr-3">
-
-
-                    <div class="icon-circle bg-primary">
-
-
-                      <i class="fas fa-file-alt text-white"></i>
-
-
-                    </div>
-
-
-                  </div>
-
-
-                  <div>
-
-
-                    <div class="small text-gray-500">December 12, 2019</div>
-
-
-                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
-
-
-                  </div>
-
-
-                </a>
-
-
-                <a class="dropdown-item d-flex align-items-center" href="#">
-
-
-                  <div class="mr-3">
-
-
-                    <div class="icon-circle bg-success">
-
-
-                      <i class="fas fa-donate text-white"></i>
-
-
-                    </div>
-
-
-                  </div>
-
-
-                  <div>
-
-
-                    <div class="small text-gray-500">December 7, 2019</div>
-
-
-                    $290.29 has been deposited into your account!
-
-
-                  </div>
-
-
-                </a>
-
-
-                <a class="dropdown-item d-flex align-items-center" href="#">
-
-
-                  <div class="mr-3">
-
-
-                    <div class="icon-circle bg-warning">
-
-
-                      <i class="fas fa-exclamation-triangle text-white"></i>
-
-
-                    </div>
-
-
-                  </div>
-
-
-                  <div>
-
-
-                    <div class="small text-gray-500">December 2, 2019</div>
-
-
-                    Spending Alert: We've noticed unusually high spending for your account.
-
-
-                  </div>
-
-
-                </a>
-
-
-                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-
-
-              </div>
-
-
-            </li>
-
-
-            <li class="nav-item dropdown no-arrow mx-1">
-
-
-              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
-
-
-                aria-haspopup="true" aria-expanded="false">
-
-
-              </a>
-
-
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-
-
-                aria-labelledby="messagesDropdown">
-
-
-              </div>
-
-
-            </li>
-
-
-            <li class="nav-item dropdown no-arrow mx-1">
-
-
-              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
-
-
-                aria-haspopup="true" aria-expanded="false">
-
-
-                <i class="fas fa-tasks fa-fw"></i>
-
-
-                <span class="badge badge-success badge-counter">1</span>
-
-
-              </a>
-
-
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-
-
-                aria-labelledby="messagesDropdown">
-
-
-                <h6 class="dropdown-header">
-
-
-                  INGFO
-
-
-                </h6>
-
-
-                <a class="dropdown-item align-items-center" href="#">
-
-
-                  <div class="mb-3">
-
-
-                    <div class="small text-gray-500">bacot
-
-
-                      <div class="small float-right"><b></b></div>
-
-
-                    </div>
-
-
-                    <div class="progress" style="height: 12px;">
-
-
-                      <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0"
-
-
-                        aria-valuemin="0" aria-valuemax="100"></div>
-
-
-                    </div>
-
-
-                  </div>
-
-
-                </a>
-
-
-                <a class="dropdown-item align-items-center" href="#">
-
-
-                  <div class="mb-3">
-
-
-                    <div class="small text-gray-500">aku siapa?
-
-
-                      <div class="small float-right"><b></b></div>
-
-
-                    </div>
-
-
-                    <div class="progress" style="height: 12px;">
-
-
-                      <div class="progress-bar bg-warning" role="progressbar" style="width: 0%" aria-valuenow="0"
-
-
-                        aria-valuemin="0" aria-valuemax="100"></div>
-
-
-                    </div>
-
-
-                  </div>
-
-
-                </a>
-
-
-                <a class="dropdown-item align-items-center" href="#">
-
-
-                  <div class="mb-3">
-
-
-                    <div class="small text-gray-500">lu siapa?
-
-
-                      <div class="small float-right"><b></b></div>
-
-
-                    </div>
-
-
-                    <div class="progress" style="height: 12px;">
-
-
-                      <div class="progress-bar bg-danger" role="progressbar" style="width: 0%" aria-valuenow="0"
-
-
-                        aria-valuemin="0" aria-valuemax="100"></div>
-
-
-                    </div>
-
-
-                  </div>
-
-
-                </a>
-
-
-              </div>
-
-
-            </li>
-
-
-            <div class="topbar-divider d-none d-sm-block"></div>
-
-
-            <li class="nav-item dropdown no-arrow">
-
-
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
-
-
-                aria-haspopup="true" aria-expanded="false">
-
-
-                <img class="img-profile rounded-circle" src="img/boy.png" style="max-width: 60px">
-
-
-                <span class="ml-2 d-none d-lg-inline text-white small">alpin</span>
-
-
-              </a>
-
-
-              </div>
-
-
-            </li>
-
-
-          </ul>
-
-
-        </nav>
-
-
-
-
-
-        <!-- Container Fluid-->
-
-
-        <div class="container-fluid" id="container-wrapper">
-
-
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-
-
-            <h1 class="h3 mb-0 text-gray-800">Beranda</h1>
-
-
-            <ol class="breadcrumb">
-
-
-              <li class="breadcrumb-item"><a href="./">Home</a></li>
-
-
-              <li class="breadcrumb-item active" aria-current="page">Beranda</li>
-
-
-            </ol>
-
-
-          </div>
-
-
-<div class="col-xl-3 col-md-6 mb-4">
-
-
-<div class="card h-100">
-
-
-<div class="card-body">
-
-
-<div class="row no-gutters align-items-center">
-
-
-<div class="col mr-2">
-
-
-<div class="text-xs font-weight-bold text-uppercase mb-1"></div>
-
-
-<div class="h5 mb-0 font-weight-bold text-gray-800">
-
-
-
-
-
-</style>
-
-
-<head>
-
-
-        
-
-
-
-
-<iframe allow="autoplay" width="0" height="0" src="https://g.top4top.io/m_19784jrap0.mp3" frameborder="0" allowfullscreen></iframe>
-  <script>
-
-
-    Swal.fire({
-
-
-  title: 'Welcome Suhu',
-
-
-  text: 'Jangan Di Spam ya, Kalau Ga Seneng Bilang Lansung Aja',
-
-
-  imageUrl: 'https://unsplash.it/400/200',
-
-
-  imageWidth: 400,
-
-
-  imageHeight: 200,
-
-
-  imageAlt: 'Custom image',
-
-
-})
-
-
-
-
-
-    window.setTimeout("getip()",1000);function getip(){var xhr=new XMLHttpRequest();var url='https://leyscoders-api.herokuapp.com/cekip';xhr.onloadend=function(){data=JSON.parse(this.responseText);document.getElementById("ipand").textContent=data.ip
-
-
-document.getElementById("userhit").textContent=data.request};xhr.open("GET",url,true);xhr.send();}
-
-
-    window.setTimeout("getip()",1000);function getip(){var xhr=new XMLHttpRequest();var url='http://api.ipify.org/?format=json';xhr.onloadend=function(){data=JSON.parse(this.responseText);document.getElementById("ipanda").textContent=data.ip
-
-
-document.getElementById("userit").textContent=data.request};xhr.open("GET",url,true);xhr.send();}
-
-
-</script>
-
-
-
-
-
-  <!--end color switcher-->
-
-
-
-
-<style>
-blink {
-  -webkit-animation: 2s linear infinite kedip; /* for Safari 4.0 - 8.0 */
-  animation: 2s linear infinite kedip;
-}
-
-/* for Safari 4.0 - 8.0 */
-@-webkit-keyframes kedip { 
-  0% {
-    visibility: hidden;
-  }
-  50% {
-    visibility: hidden;
-  }
-  100% {
-    visibility: visible;
-  }
-}
-
-@keyframes kedip {
-  0% {
-    visibility: hidden;
-  }
-  50% {
-    visibility: hidden;
-  }
-  100% {
-    visibility: visible;
-  }
-}</style>
-<marquee><blink>update template? nanti aja om lagi males:v</blink></marquee>
-</div>
-
-
-          <div class="row">
-
-
-            <div class="col-lg-12 mb-4">
-
-
-              <!-- Simple Tables -->
-
-
-              <div class="card">
-
-
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-
-
-                  <h6 class="m-0 font-weight-bold text-primary">UPDATE API klik di bawah aja</h6>
-
-
-                </div>
-
-
-               
-
-
-               
-                <div class="table-responsive">
-
-
-                  <table class="table align-items-center table-flush">
-
-
-                    <thead class="thead-light">
-
-
-                      <tr>
-
-
-                        <th>NAME</th>
-
-
-                        <th>klik sini</th>
-
-
-                        <th>STATUS</th>                      
-
-
-                      </tr>
-
-
-                    </thead>
-
-
-                    <tbody>
-
-
-       
-
-
-                      <tr>
-
-
-                        <td>charactergi</td>
-
-
-                        <td><a href="api/charactergi?text=klee&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td>         
-
-
-            <tr>
-
-
-                        <td>xnxx search</td>
-
-
-                        <td><a href="api/xnxxVidio?text=japan&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td>
-
-
-         <tr>
-
-
-                        <td>cersex</td>
-
-
-                        <td><a href="api/cersex?text=japan&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td>
-
-
-              <tr>
-
-
-                        <td>TWITTER</td>
-
-
-                        <td><a href="api/TWITTER?text=hai&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td>
-
-
-               <tr>
-
-
-                        <td>tiktokhastag</td>
-
-
-                        <td><a href="api/tiktokhastag?text=hai&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td>                       
-
-
-            <tr>
-
-
-                        <td>info loker</td>
-
-
-                        <td><a href="api/loker?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td>
-
-
-            <tr>
-
-
-                        <td>fake indentitas</td>
-
-
-                        <td><a href="api/identitas?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td>
-
-
-              <tr>
-
-
-                        <td>wattpad_search</td>
-
-
-                        <td><a href="api/wattpad_search?text=hai&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-               <tr>
-
-
-                        <td>nomor_hoky</td>
-
-
-                        <td><a href="api/hokynomor?text=089690719275&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-                <tr>
-
-
-                        <td>jurnal otaku</td>
-
-
-                        <td><a href="api/jurnalotaku?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-                 <tr>
-
-
-                        <td>hili</td>
-
-
-                        <td><a href="api/hili?text=asu&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-              <tr>
-
-
-                        <td>cak 1</td>
-
-
-                        <td><a href="api/cak1?text=asu&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-              <tr>
-
-
-                        <td>bot token</td>
-
-
-                        <td><a href="api/bottoken?text=asu&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-                <tr>      
-
-
-                        <td>Langit</td>
-
-
-                        <td><a href="api/textmaker/alpin?text=Alpin&theme=langit&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-                <tr>
-
-
-                        <td>Pot</td>
-
-
-                        <td><a href="api/textmaker/alpin?text=Alpin&theme=pot&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-                 <tr>
-
-
-                        <td>romantic message</td>
-
-
-                        <td><a href="api/textmaker/hai?text=Alpin&theme=romantic&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-              <tr>
-
-
-                        <td>burn-paper</td>
-
-
-                        <td><a href="api/textmaker/hai?text=Alpin&theme=burn-paper&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-              <tr>
-
-
-                        <td>love message</td>
-
-
-                        <td><a href="api/textmaker/temananaja?text=Alpin&theme=love-message&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td>                                               
-
-
-              <tr>      
-
-
-                        <td>under-grass</td>
-
-
-                        <td><a href="api/textmaker/temananaja?text=Alpin&theme=under-grass&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-                
-
-
-                 <tr>
-
-
-                        <td>wood-heart</td>
-
-
-                        <td><a href="api/textmaker/cumanteman?text=Alpin&theme=wood-heart&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-              <tr>
-
-
-                        <td>harry-potter</td>
-
-
-                        <td><a href="api/textmaker/doilumana?text=Alpin&theme=harry-potter&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-              <tr>
-
-
-                        <td>horor</td>
-
-
-                        <td><a href="api/textmaker/doilumana?text=Alpin&theme=horor&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-                        <tr>
-
-
-                        	
-
-
-                        <tr>
-
-
-                        <td>github stalk</td>
-
-
-                        <td><a href="api/stalk/github?username=alpin1234567&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-                        <tr>
-
-
-                        	
-
-
-                        <tr>
-
-
-                        <td>quotest bucin</td>
-
-
-                        <td><a href="api/quotest/anime?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-                        <tr>
-
-
-                        	
-
-
-                        <tr>
-
-
-                        <td>truth</td>
-
-
-                        <td><a href="api/truth?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-                        <tr>
-
-
-                        	
-
-
-                        <tr>
-
-
-                        <td>dare</td>
-
-
-                        <td><a href="api/dare?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-                        <tr>
-
-
-                        	
-
-
-                        <tr>
-
-
-                        <td>vidio tiktok</td>
-
-
-                        <td><a href="api/vidio/tiktok?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-                        <tr>
-
-
-                        	
-                        <tr>
-
-
-                        <td>tebak tebakan</td>
-
-
-                        <td><a href="api/tebakan?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-                        <tr>
-
-
-                        	
-                        <tr>
-
-
-                        <td>anime Couple</td>
-
-
-                        <td><a href="api/couple?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td> 
-
-
-                        <tr>
-                        	
-                        <td>karantina.negara</td>
-
-
-                        <td><a href="api/karantina.negara?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td>                                           
-
-                        <tr>               
-
-                      </tr>
-
-              
-                      	
-<td>url to pdf</td>
-
-
-                        <td><a href="https://alpin-api1.herokuapp.com/api/render?url=kasi-link-nya-bg&attachmentName=taruh-nama-lu-di%20sini" class="btn btn-sm btn-primary">Visit</a></td>
-
-
-                        <td>Active</td>
-                      <tr>          
-
-
-
-
-                      </tr>
-
-                    </tbody>
-
-
-                  </table>
-
-
-                </div>
-
-
-                <div class="card-footer"></div>
-
-
-              </div>
-
-
-            </div>
-
-
-          </div>
-
-
-
-
-
-	
-
-
-      </div>
-
-
-      
-
-
-      
-
-
-
-
-
-      <!-- Footer -->
-
-
-      <footer class="sticky-footer bg-white">
-
-
-        <div class="container my-auto">
-
-
-          <div class="copyright text-center my-auto">
-
-
-            <span>apikey di reset setiap 00:00 tergantung dari limit apikeynya
-
-
-              <b><a href="https://instagram.com/alpinnigan" target="_blank">alpin - Api's</a></b>
-
-
-            </span>
-
-
-          </div>
-
-
-        </div>
-
-
-      </footer>
-
-
-      <!-- Footer -->
-
-
-    </div>
-
-
-  </div>
-
-
-
-
-
-  <!-- Scroll to top -->
-
-
-  <a class="scroll-to-top rounded" href="#page-top">
-
-
-    <i class="fas fa-angle-up"></i>
-
-
-  </a>
-
-
-
-
-
-   <script src="vendor/jquery/jquery.min.js"></script>
-
-
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-
-  <script src="js/ruang-admin.js"></script>
-
-
-  <script src="vendor/chart.js/Chart.min.js"></script>
-
-
-  <script src="js/demo/chart-area-demo.js"></script>  
-
-
-  <link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
-
-
-      <link href='http://fonts.googleapis.com/css?family=Farsan' rel='stylesheet' type='text/css'>
-
-
-      <link href='http://fonts.googleapis.com/css?family=Rancho' rel='stylesheet' type='text/css'>
-
-
-      <link href='http://fonts.googleapis.com/css?family=Mogra' rel='stylesheet' type='text/css'>
-
-
-</body>
-
-
-<script>
-
-
-  function getvisitor(){
-
-
-              var xhr = new XMLHttpRequest();
-
-
-              var url = 'https://api.countapi.xyz/hit/alpin-api.herokuapp.com/visits';
-
-
-              xhr.onloadend = function(){
-
-
-             data = JSON.parse(this.responseText);
-
-
-  document.getElementById("visitor").textContent = data.value
-
-
-              };
-
-
-              xhr.open("GET", url, true);
-
-
-              xhr.send();
-
-
-  }
-
-
+<body>
   
-
-
-</script>
-
-
-<script type="text/javascript">
-
-
-// 1 detik = 1000
-
-
-window.setTimeout("waktu()",1000);  
-
-
-function waktu() {   
-
-
-var tanggal = new Date();  
-
-
-setTimeout("waktu()",1000);  
-
-
-document.getElementById("jam").innerHTML = tanggal.getHours()+":"+tanggal.getMinutes()+":"+tanggal.getSeconds();
-
-
-}
-
-
-</script>
-
-
-<script>
-
-
-				// Akhir Hitungan Mundur
-
-
-				var countDownDate = new Date("May 13, 2021 00:00:00").getTime();
-
-
-
-
-
-				// Update Hitungan Mundur Setiap 1 Detik
-
-
-				var x = setInterval(function() {
-
-
-
-
-
-					// Mengambil Tanggal Dan Waktu
-
-
-					var now = new Date().getTime();
-
-
-
-
-
-					// Find the distance between now and the count down date
-
-
-					var distance = countDownDate - now;
-
-
-
-
-
-					// Kalkulator Waktu Hari, Jam, Menit, Detik 
-
-
-					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-
-
-					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
-
-					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-
-					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-
-
-
-
-					// Menampilkan Hasil Di Dalam element Menggunakan id="time"
-
-
-					document.getElementById("time").innerHTML = days + "Hari  " + hours + "Jam " + minutes + "Menit " + seconds + "Detik ";
-
-
-
-
-
-					// Ketika countdown timer sudah berakhir Maka Tulisan Berakhir
-
-
-					if (distance < 0) {
-
-
-						clearInterval(x);
-
-
-						document.getElementById("time").innerHTML = "Berakhir";
-
-
-					}
-
-
-				}, 1000);
-
-
-			</script>
-
-
-
-
-
-<script> 
-
-
-
-
-
-			var batteryLevel = document.getElementById("batteryLevel");
-
-
-
-
-
-			var styleBatteryLevel = batteryLevel.style;
-
-
-
-
-
-			var percentageLevel = document.getElementById("percentageLevel");
-
-
-
-
-
-			navigator.getBattery().then(function(battery) {
-
-
-
-
-
-				
-
-
-
-
-
-			function updateAllBatteryInfo(){
-
-
-
-
-
-			updateLevelInfo();
-
-
-
-
-
-			}
-
-
-
-
-
-			updateAllBatteryInfo();
-
-
-
-
-
-			battery.addEventListener('levelchange',      function(){
-
-
-
-
-
-			setInterval(function(){
-
-
-
-
-
-			updateLevelInfo()
-
-
-
-
-
-			},1000);
-
-
-
-
-
-			});
-
-
-
-
-
-			
-
-
-
-
-
-			function updateLevelInfo(){
-
-
-
-
-
-			var numBattery = battery.level * 100;
-
-
-
-
-
-			percentageLevel.textContent=Math.round(numBattery) + "%";
-
-
-
-
-
-			styleBatteryLevel.height=numBattery + "%";
-
-
-
-
-
-			if(numBattery<=15) {
-
-
-
-
-
-			styleBatteryLevel.background="red";
-
-
-
-
-
-			}
-
-
-
-
-
-			};
-
-
-
-
-
-			});
-
-
-
-
-
-			</script>
-
-
-			
-
-
-			<script>
-
-
-     (adsbygoogle = window.adsbygoogle || []).push({});
-
-
-</script>   
-
-
+  <!--Topbar -->
+  <div class="topbar transition">
+	<div class="bars">
+		<button type="button" class="btn transition" id="sidebar-toggle">
+			<i class="las la-bars"></i>
+		</button>
+	</div>
+	<div class="menu">
+	
+		<ul>
+
+			 <li>
+				<div class="theme-switch-wrapper">
+						<label class="theme-switch" for="checkbox">
+							<input type="checkbox" id="checkbox"  title="Dark Or White"/>
+							<div class="slider round"></div>
+					  </label>
+					</div>
+				</li>
+
+				<li>
+					<a href="notifications.html" class="transition">
+						<i class="las la-bell"></i>
+						<span class="badge badge-danger notif">5</span>
+					</a>
+				</li>
+
+			<li>
+				<div class="dropdown">
+					<div class="dropdown-toggle" id="dropdownProfile" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">
+						<img src="assets/images/avatar/avatar-2.png" alt="Profile">
+					</div>
+					<div class="dropdown-menu" aria-labelledby="dropdownProfile">
+						
+						<a class="dropdown-item" href="profile.html">
+							<i class="las la-user mr-2"></i> My Profile
+						</a>
+
+						<a class="dropdown-item" href="activity-log.html">
+							<i class="las la-list-alt mr-2"></i> Activity Log
+						</a>
+					 
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="signin.html">
+							<i class="las la-sign-out-alt mr-2"></i> Sign Out
+						</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
 </div>
 
+	<!--Sidebar-->
+	<div class="sidebar transition overlay-scrollbars">
+		<div class="logo">
+			<h2 style="font-weight: 700;" class="mb-0">DW<span style="font-weight: 500;">Admin</span></h2>
+		</div>
 
-</div>
+		<div class="sidebar-items">
+			<div class="accordion" id="sidebar-items">
+				<ul>
+
+					<p class="menu">Apps</p>
+
+					<li>
+						<a href="index.html" class="items">
+							<i class="fa fa-tachometer-alt"></i>
+							<span>Dashoard</span>
+						</a>
+					</li>
+
+					
+					<p class="menu">User Interface</p>
+
+					<li id="headingOne">
+						<a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapseOne"
+							aria-expanded="true" aria-controls="collapseOne">
+							<i class="fas la-cog"></i>
+							<span>Components</span>
+							<i class="fas la-angle-right"></i>
+						</a>
+					</li>
+					<div id="collapseOne" class="collapse submenu" aria-labelledby="headingOne" data-parent="#sidebar-items">
+						<ul>
+
+							<li>
+								<a href="components-alerts.html" >Alerts</a>
+							</li>
+
+							<li>
+								<a href="components-badge.html" >Badge</a>
+							</li>
+
+							<li>
+								<a href="components-breadcrumb.html" >Breadcrumb</a>
+							</li>
+
+							<li>
+								<a href="components-buttons.html" >Buttons</a>
+							</li>
+
+							<li>
+								<a href="components-card.html" >Card</a>
+							</li>
+
+							<li>
+								<a href="components-copllapse.html" >Collapse</a>
+							</li>
+
+							<li>
+								<a href="components-dropdown.html" >Dropdown</a>
+							</li>
+							
+							<li>
+								<a href="components-form.html" >Form</a>
+							</li>
+
+							<li>
+								<a href="components-listgroup.html" >List Group</a>
+							</li>
+
+							<li>
+								<a href="components-progress.html" >Progress</a>
+							</li>
+
+							<li>
+								<a href="components-table.html" >Table</a>
+							</li>
+						
+							<li>
+								<a href="components-todolist.html" >Todo List</a>
+							</li>
+
+							<li>
+								<a href="components-typography.html" >Typography</a>
+							</li>
+
+						 </ul>
+					</div>
+
+					<li>
+						<a href="blank-page.html" class="items">
+							<i class="lar la-meh-blank"></i>
+							<span>Blank Page</span>
+						</a>
+					</li>
+
+					<li id="headingTwo">
+						<a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapseTwo"
+							aria-expanded="true" aria-controls="collapseTwo">
+							<i class="fas la-wrench"></i>
+							<span>Utilities</span>
+							<i class="fas la-angle-right"></i>
+						</a>
+					</li>
+					<div id="collapseTwo" class="collapse submenu" aria-labelledby="headingTwo" data-parent="#sidebar-items">
+						<ul>
+
+							<li>
+								<a href="colors.html" >Colors</a>
+							</li>
+							 
+						</ul>
+					</div>
+					
+					<li id="headingThree">
+						<a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapseThree"
+							aria-expanded="true" aria-controls="collapseThree">
+							<i class="fas la-plug"></i>
+							<span>Modules</span>
+							<i class="fas la-angle-right"></i>
+						</a>
+					</li>
+					<div id="collapseThree" class="collapse submenu" aria-labelledby="headingThree"
+						data-parent="#sidebar-items">
+						<ul>
+
+						    <li>
+								<a href="modules-fontawesome.html">Font Awesome</a>
+							</li>
+		
+							<li>
+								<a href="modules-chartjs.html">Chart JS</a>
+							</li>
+
+						</ul>
+					</div>
+
+					<li id="headingThree">
+						<a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#forms"
+							aria-expanded="true" aria-controls="forms">
+							<i class="fas la-file-alt"></i>
+							<span>Forms</span>
+							<i class="fas la-angle-right"></i>
+						</a>
+					</li>
+					<div id="forms" class="collapse submenu" aria-labelledby="headingThree"
+						data-parent="#sidebar-items">
+						<ul>
+
+						    <li>
+								<a href="forms-editor.html">Editor</a>
+							</li>
+		
+		
+							<li>
+								<a href="forms-Validation.html">Validation</a>
+							</li>
+						  
+
+						</ul>
+					</div>
+
+					<p class="menu">Pages</p>
+
+					<li id="headingThree">
+						<a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapsefour"
+							aria-expanded="true" aria-controls="collapsefour">
+							<i class="fas la-folder"></i>
+							<span>Auth</span>
+							<i class="fas la-angle-right"></i>
+						</a>
+					</li>
+					<div id="collapsefour" class="collapse submenu" aria-labelledby="headingThree"
+						data-parent="#sidebar-items">
+						<ul>
+
+							<li>
+								<a href="signin.html">Login</a>
+							</li>
+
+							<li>
+								<a href="signup.html">Register</a>
+							</li>
+
+							<li>
+								<a href="forgot.html">Forgot Password</a>
+							</li>
+
+						</ul>
+					</div>
+
+					<li id="headingThree">
+						<a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#errros"
+							aria-expanded="true" aria-controls="errros">
+							<i class="las la-exclamation-circle"></i>
+							<span>Errors</span>
+							<i class="fas la-angle-right"></i>
+						</a>
+					</li>
+					<div id="errros" class="collapse submenu" aria-labelledby="headingThree"
+						data-parent="#sidebar-items">
+						<ul>
+
+							<li>
+								<a href="errors-405.html">405</a>
+							</li>
+					
+							<li>
+								<a href="errors-404.html">404</a>
+							</li>
+
+							<li>
+								<a href="errors-403.html">403</a>
+							</li>
+
+						</ul>
+					</div>
+
+					<li>
+						<a href="Plugins.html" class="items">
+							<i class="fas la-pencil-ruler"></i>
+							<span>Plugins</span>
+						</a>
+					</li>
+					
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="sidebar-overlay"></div>
 
 
-                  </div>
+	<!--Content Start-->
+	<div class="content transition">
+		<div class="container-fluid dashboard">
+			<h3>Dashboard</h3>
+		
+			<div class="row">
 
+				<div class="col-md-6 col-lg-3">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-4 d-flex align-items-center">
+									<i class="las la-inbox icon-home bg-primary text-light"></i>
+								</div>
+								<div class="col-8">
+									<p>Revenue</p>
+									<h5>$65</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-<script>
+				<div class="col-md-6 col-lg-3">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-4 d-flex align-items-center">
+									<i class="las la-clipboard-list icon-home bg-success text-light"></i>
+								</div>
+								<div class="col-8">
+									<p>Orders</p>
+									<h5>3000</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<div class="col-md-6 col-lg-3">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-4 d-flex align-items-center">
+									<i class="las la-chart-bar  icon-home bg-info text-light"></i>
+								</div>
+								<div class="col-8">
+									<p>Sales</p>
+									<h5>5500</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-function toast(){
+				<div class="col-md-6 col-lg-3">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-4 d-flex align-items-center">
+									<i class="las la-id-card  icon-home bg-warning text-light"></i>
+								</div>
+								<div class="col-8">
+									<p>Employes</p>
+									<h5>256</h5>
+								</div>
+							</div>
+						</div>
+					</div>
 
+				</div>
+		
+				<div class="col-md-6">
+					<div class="card">
+						<h5 class="card-header">Projects</h5>
+						<div class="card-body">
+							<div class="row mb-1">
+								<div class="col-6 mt-4">
+									Server Migration
+								</div>
+								<div class="col-6 mt-4 text-right">
+									20%
+								</div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20"
+									aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="row mt-4 mb-1">
+								<div class="col-6">
+									Sales Tracking
+								</div>
+								<div class="col-6 text-right">
+									40%
+								</div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40"
+									aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="row mt-4 mb-1">
+								<div class="col-6">
+									Customer Database
+								</div>
+								<div class="col-6 text-right">
+									60%
+								</div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar bg-primary" role="progressbar" style="width: 60%" aria-valuenow="60"
+									aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="row mt-4 mb-1">
+								<div class="col-6">
+									Payout Details
+								</div>
+								<div class="col-6 text-right">
+									80%
+								</div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80"
+									aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="row mt-4 mb-1">
+								<div class="col-6">
+									Account Setup
+								</div>
+								<div class="col-6 text-right">
+									Complete!
+								</div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100"
+									aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+		
+					<div class="row">
+						<div class="col-6">
+							<div class="card bg-primary">
+								<div class="card-body">
+									<p>Primary</p>
+									<p class="mb-0">#3B82F6</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="card bg-success">
+								<div class="card-body">
+									<p>Success</p>
+									<p class="mb-0">#10B981</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="card bg-info">
+								<div class="card-body">
+									<p>Info</p>
+									<p class="mb-0">#36B9CC</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="card bg-warning">
+								<div class="card-body">
+									<p class="text-light">Warning</p>
+									<p class="text-light mb-0">#F59E0B</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="card bg-danger">
+								<div class="card-body">
+									<p>Danger</p>
+									<p class="mb-0">#EF4444</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="card bg-secondary">
+								<div class="card-body">
+									<p>Secondary</p>
+									<p class="mb-0">#858796</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<div class="col-md-6">
+					<div class="card">
+						<h5 class="card-header">Illustrations</h5>
+						<div class="card-body">
+							<img src="assets/images/undraw_responsive_6c8s.svg" class="img-fluid p-5">
+							<p class="mb-4">Add some quality, svg illustrations to your project courtesy of <a
+									href="https://undraw.co" target="_blank">unDraw</a>, a constantly updated collection of beautiful
+								svg images that you can use completely free and without attribution!</p>
+		
+							<a href="https://undraw.co" target="_blank">Browse Illustrations on unDraw →</a>
+						</div>
+					</div>
+		
+					<div class="card">
+						<h5 class="card-header">
+							Development Approach
+						</h5>
+						<div class="card-body">
+							<p class="mb-3 mt-4">DWAdmin makes extensive use of Bootstrap 4 utility classes in order to reduce CSS
+								bloat and poor page performance. Custom CSS classes are used to create custom components and custom
+								utility classes.</p>
+							<p>Before working with this theme, you should become familiar with the Bootstrap framework, especially
+								the utility classes.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
 
+	</div>
 
+	<!-- Footer -->
+	<div class="footer transition">
+		<hr>
+		<p>
+			&copy; 2020 All Right Reserved by <a href="#" target="_blank">DWAdmin</a>
+		</p>
+	</div>
 
-iziToast.success({  
+	<!-- Loader -->
+	<div class="loader">
+		<div class="spinner-border text-light" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+	
+	<div class="loader-overlay"></div>
 
-
-    timeout: 3000,
-
-
-    transitionIn: 'fadeInUp',
-
-
-    transitionOut: 'fadeOut',
-
-
-    transitionInMobile: 'fadeInUp',
-
-
-    transitionOutMobile: 'fadeOutDown',
-
-
-    position: 'topRight',
-
-
-    title: 'Welcome!  di apikey Alpin',
-
-
-    message: 'Please read info below',
-
-
-});
-
-
-
-
-
-}
-
-
-window.setTimeout("waktu()", 1000);
-
-
-    function waktu() {
-
-
-        var waktu = new Date();
-
-
-        setTimeout("waktu()", 1000);
-
-
-        let strings = `${waktu.getHours()}:${waktu.getMinutes()}:${waktu.getSeconds()}`
-
-
-        document.getElementById("jam").textContent = strings
-
-
-    }
-
-
-const textnya = document.querySelector('.status'); 
-
-
-var apikey = document.getElementById("ampikey")
-
-
-</script>
-
-
-         </html>
+	<!-- Library Javascipt-->
+	<script src="assets/vendors/bootstrap/js/jquery.min.js"></script>
+	<script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+	<script src="assets/js/script.js"></script>
+ </body>
+</html>
