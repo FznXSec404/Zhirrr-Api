@@ -15,6 +15,18 @@ router.get('/login', (req, res) => {
     res.sendFile(__path + '/views/login.html')
 })
 
+router.get('/colors', (req, res) => {
+    res.sendFile(__path + '/colors.html')
+})
+
+router.get('/menu-api', (req, res) => {
+    res.sendFile(__path + '/menu-api.html')
+})
+
+router.get('/pembaruan-log', (req, res) => {
+    res.sendFile(__path + '/pembaruan-log.html')
+})
+
 router.get('/api/news', (req, res) => {
     res.redirect('https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/Berita.json')
 })
