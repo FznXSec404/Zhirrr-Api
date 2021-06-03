@@ -1,0 +1,1316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>alpin'apis</title>
+
+	<!-- Bootstrap CSS-->
+	<link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.css">
+	<!-- Style CSS (White)-->
+	<link rel="stylesheet" href="assets/css/White.css">
+	<!-- Style CSS (Dark)-->
+	<link rel="stylesheet" href="assets/css/Dark.css">
+	<!-- FontAwesome CSS-->
+	<link rel="stylesheet" href="assets/vendors/fontawesome/css/all.css">
+	<!-- Icon LineAwesome CSS-->
+	<link rel="stylesheet" href="assets/vendors/lineawesome/css/line-awesome.min.css">
+
+</head>
+<body>
+  
+  <!--Topbar -->
+  <div class="topbar transition">
+	<div class="bars">
+		<button type="button" class="btn transition" id="sidebar-toggle">
+			<i class="las la-bars"></i>
+		</button>
+	</div>
+	<div class="menu">
+	
+		<ul>
+
+			 <li>
+				<div class="theme-switch-wrapper">
+						<label class="theme-switch" for="checkbox">
+							<input type="checkbox" id="checkbox"  title="Dark Or White"/>
+							<div class="slider round"></div>
+					  </label>
+					</div>
+				</li>
+
+				<li>
+					<a href="notifications.html" class="transition">
+						<i class="las la-bell"></i>
+						<span class="badge badge-danger notif">5</span>
+					</a>
+				</li>
+
+			<li>
+				<div class="dropdown">
+					<div class="dropdown-toggle" id="dropdownProfile" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">
+						<img src="assets/images/avatar/avatar-2.png" alt="Profile">
+					</div>
+					<div class="dropdown-menu" aria-labelledby="dropdownProfile">
+						
+						<a class="dropdown-item" href="profile.html">
+							<i class="las la-user mr-2"></i> My Profile
+						</a>
+
+						<a class="dropdown-item" href="pembaruan-log.html">
+							<i class="las la-list-alt mr-2"></i> pembaruan liat sini
+						</a>
+					 
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="menu-api.html">
+							<i class="las la-sign-out-alt mr-2"></i>menu api
+						</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+	<!--Sidebar-->
+	<div class="sidebar transition overlay-scrollbars">
+		<div class="logo">
+			<h2 style="font-weight: 700;" class="mb-0">alpin<span style="font-weight: 500;">Admin</span></h2>
+		</div>
+
+		<div class="sidebar-items">
+			<div class="accordion" id="sidebar-items">
+				<ul>
+
+					<p class="menu">Apps</p>
+
+					<li>
+						<a href="index.html" class="items">
+							<i class="fa fa-tachometer-alt"></i>
+							<span>Dashoard</span>
+						</a>
+					</li>
+
+					
+					<p class="menu">User Interface</p>
+
+					<li id="headingOne">
+						<a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapseOne"
+							aria-expanded="true" aria-controls="collapseOne">
+							<i class="fas la-cog"></i>
+							<span>Components</span>
+							<i class="fas la-angle-right"></i>
+						</a>
+					</li>
+					<div id="collapseOne" class="collapse submenu" aria-labelledby="headingOne" data-parent="#sidebar-items">
+						<ul>
+
+							<li>
+								<a href="components-alerts.html" >Alerts</a>
+							</li>
+
+							<li>
+								<a href="components-badge.html" >sosial</a>
+							</li>
+
+							<li>
+								<a href="components-breadcrumb.html" >Breadcrumb</a>
+							</li>
+
+							<li>
+								<a href="components-buttons.html" >Buttons</a>
+							</li>
+
+							<li>
+								<a href="components-card.html" >Card</a>
+							</li>
+
+							<li>
+								<a href="components-copllapse.html" >Collapse</a>
+							</li>
+
+
+							<li>
+								<a href="components-dropdown.html" >Dropdown</a>
+							</li>
+							
+							<li>
+								<a href="components-form.html" >Form</a>
+							</li>
+
+							<li>
+								<a href="components-listgroup.html" >List Group</a>
+							</li>
+
+							<li>
+								<a href="components-progress.html" >Progress</a>
+							</li>
+
+							<li>
+								<a href="components-table.html" >Table</a>
+							</li>
+						
+							<li>
+								<a href="components-todolist.html" >Todo List</a>
+							</li>
+
+							<li>
+								<a href="components-typography.html" >Typography</a>
+							</li>
+
+						 </ul>
+					</div>
+
+					<li>
+						<a href="blank-page.html" class="items">
+							<i class="lar la-meh-blank"></i>
+							<span>Blank Page</span>
+						</a>
+					</li>
+
+					<li id="headingTwo">
+						<a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapseTwo"
+							aria-expanded="true" aria-controls="collapseTwo">
+							<i class="fas la-wrench"></i>
+							<span>Utilities</span>
+							<i class="fas la-angle-right"></i>
+						</a>
+					</li>
+					<div id="collapseTwo" class="collapse submenu" aria-labelledby="headingTwo" data-parent="#sidebar-items">
+						<ul>
+
+							<li>
+								<a href="colors.html" >Colors</a>
+							</li>
+							 
+						</ul>
+					</div>
+					
+					<li id="headingThree">
+						<a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapseThree"
+							aria-expanded="true" aria-controls="collapseThree">
+							<i class="fas la-plug"></i>
+							<span>Modules</span>
+							<i class="fas la-angle-right"></i>
+						</a>
+					</li>
+					<div id="collapseThree" class="collapse submenu" aria-labelledby="headingThree"
+						data-parent="#sidebar-items">
+						<ul>
+
+						    <li>
+								<a href="modules-fontawesome.html">Font Awesome</a>
+							</li>
+		
+							<li>
+								<a href="modules-chartjs.html">Chart JS</a>
+							</li>
+
+						</ul>
+					</div>
+
+					<li id="headingThree">
+						<a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#forms"
+							aria-expanded="true" aria-controls="forms">
+							<i class="fas la-file-alt"></i>
+							<span>Forms</span>
+							<i class="fas la-angle-right"></i>
+						</a>
+					</li>
+					<div id="forms" class="collapse submenu" aria-labelledby="headingThree"
+						data-parent="#sidebar-items">
+						<ul>
+
+						    <li>
+								<a href="forms-editor.html">Editor</a>
+							</li>
+		
+		
+							<li>
+								<a href="forms-Validation.html">Validation</a>
+							</li>
+						  
+
+						</ul>
+					</div>
+
+					<p class="menu">Pages</p>
+
+					<li id="headingThree">
+						<a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapsefour"
+							aria-expanded="true" aria-controls="collapsefour">
+							<i class="fas la-folder"></i>
+							<span>Auth</span>
+							<i class="fas la-angle-right"></i>
+						</a>
+					</li>
+					<div id="collapsefour" class="collapse submenu" aria-labelledby="headingThree"
+						data-parent="#sidebar-items">
+						<ul>
+
+							<li>
+								<a href="signin.html">Login</a>
+							</li>
+
+							<li>
+								<a href="signup.html">Register</a>
+							</li>
+
+							<li>
+								<a href="forgot.html">Forgot Password</a>
+							</li>
+
+						</ul>
+					</div>
+
+					<li id="headingThree">
+						<a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#errros"
+							aria-expanded="true" aria-controls="errros">
+							<i class="las la-exclamation-circle"></i>
+							<span>Errors</span>
+							<i class="fas la-angle-right"></i>
+						</a>
+					</li>
+					<div id="errros" class="collapse submenu" aria-labelledby="headingThree"
+						data-parent="#sidebar-items">
+						<ul>
+
+							<li>
+								<a href="errors-405.html">405</a>
+							</li>
+					
+							<li>
+								<a href="errors-404.html">404</a>
+							</li>
+
+							<li>
+								<a href="errors-403.html">403</a>
+							</li>
+
+						</ul>
+					</div>
+
+					<li>
+						<a href="Plugins.html" class="items">
+							<i class="fas la-pencil-ruler"></i>
+							<span>Plugins</span>
+						</a>
+					</li>
+					
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="sidebar-overlay"></div>
+
+
+	<!--Content Start-->
+	
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h6 class="font-weight-bold text-info text-uppercase">Your Battery</h6>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                        	<span id="batteryLevel"></span>
+                          <h3 class="mb-0" id="percentageLevel">Waiting...</h3>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success ">
+                          <span class="mdi mdi-battery-positive"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <font face="Original Surfer" class="text-muted font-weight-normal">Percentase Your Battery</font>
+                  </div>
+                </div>
+              </div>
+              
+
+
+               
+                <div class="table-responsive">
+
+
+                  <table class="table align-items-center table-flush">
+
+
+                    <thead class="thead-light">
+
+
+                      <tr>
+
+
+                        <th>NAME</th>
+
+
+                        <th>klik sini</th>
+
+
+                        <th>STATUS</th>                      
+
+
+                      </tr>
+
+
+                    </thead>
+
+
+                    <tbody>
+
+
+       
+
+
+                      <tr>
+
+
+                        <td>charactergi</td>
+
+
+                        <td><a href="api/charactergi?text=klee&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td>         
+
+
+            <tr>
+
+
+                        <td>xnxx search</td>
+
+
+                        <td><a href="api/xnxxVidio?text=japan&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td>
+
+
+         <tr>
+
+
+                        <td>cersex</td>
+
+
+                        <td><a href="api/cersex?text=japan&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td>
+
+
+              <tr>
+
+
+                        <td>TWITTER</td>
+
+
+                        <td><a href="api/TWITTER?text=hai&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td>
+
+
+               <tr>
+
+
+                        <td>tiktokhastag</td>
+
+
+                        <td><a href="api/tiktokhastag?text=hai&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td>                       
+
+
+            <tr>
+
+
+                        <td>info loker</td>
+
+
+                        <td><a href="api/loker?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td>
+
+
+            <tr>
+
+
+                        <td>fake indentitas</td>
+
+
+                        <td><a href="api/identitas?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td>
+
+
+              <tr>
+
+
+                        <td>wattpad_search</td>
+
+
+                        <td><a href="api/wattpad_search?text=hai&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+               <tr>
+
+
+                        <td>nomor_hoky</td>
+
+
+                        <td><a href="api/hokynomor?text=089690719275&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+                <tr>
+
+
+                        <td>jurnal otaku</td>
+
+
+                        <td><a href="api/jurnalotaku?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+                 <tr>
+
+
+                        <td>hili</td>
+
+
+                        <td><a href="api/hili?text=asu&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+              <tr>
+
+
+                        <td>cak 1</td>
+
+
+                        <td><a href="api/cak1?text=asu&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+              <tr>
+
+
+                        <td>bot token</td>
+
+
+                        <td><a href="api/bottoken?text=asu&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+                <tr>      
+
+
+                        <td>Langit</td>
+
+
+                        <td><a href="api/textmaker/alpin?text=Alpin&theme=langit&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+                <tr>
+
+
+                        <td>Pot</td>
+
+
+                        <td><a href="api/textmaker/alpin?text=Alpin&theme=pot&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+                 <tr>
+
+
+                        <td>romantic message</td>
+
+
+                        <td><a href="api/textmaker/hai?text=Alpin&theme=romantic&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+              <tr>
+
+
+                        <td>burn-paper</td>
+
+
+                        <td><a href="api/textmaker/hai?text=Alpin&theme=burn-paper&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+              <tr>
+
+
+                        <td>love message</td>
+
+
+                        <td><a href="api/textmaker/temananaja?text=Alpin&theme=love-message&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td>                                               
+
+
+              <tr>      
+
+
+                        <td>under-grass</td>
+
+
+                        <td><a href="api/textmaker/temananaja?text=Alpin&theme=under-grass&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+                
+
+
+                 <tr>
+
+
+                        <td>wood-heart</td>
+
+
+                        <td><a href="api/textmaker/cumanteman?text=Alpin&theme=wood-heart&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+              <tr>
+
+
+                        <td>harry-potter</td>
+
+
+                        <td><a href="api/textmaker/doilumana?text=Alpin&theme=harry-potter&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+              <tr>
+
+
+                        <td>horor</td>
+
+
+                        <td><a href="api/textmaker/doilumana?text=Alpin&theme=horor&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+                        <tr>
+
+
+                        	
+
+
+                        <tr>
+
+
+                        <td>github stalk</td>
+
+
+                        <td><a href="api/stalk/github?username=alpin1234567&apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+                        <tr>
+
+
+                        	
+
+
+                        <tr>
+
+
+                        <td>quotest bucin</td>
+
+
+                        <td><a href="api/quotest/anime?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+                        <tr>
+
+
+                        	
+
+
+                        <tr>
+
+
+                        <td>truth</td>
+
+
+                        <td><a href="api/truth?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+                        <tr>
+
+
+                        	
+
+
+                        <tr>
+
+
+                        <td>dare</td>
+
+
+                        <td><a href="api/dare?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+                        <tr>
+
+
+                        	
+
+
+                        <tr>
+
+
+                        <td>vidio tiktok</td>
+
+
+                        <td><a href="api/vidio/tiktok?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+                        <tr>
+
+
+                        	
+                        <tr>
+
+
+                        <td>tebak tebakan</td>
+
+
+                        <td><a href="api/tebakan?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+                        <tr>
+
+
+                        	
+                        <tr>
+
+
+                        <td>anime Couple</td>
+
+
+                        <td><a href="api/couple?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td> 
+
+
+                        <tr>
+                        	
+                        <td>karantina.negara</td>
+
+
+                        <td><a href="api/karantina.negara?apikey=alpin1" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td>                                           
+
+                        <tr>               
+
+                      </tr>
+
+              
+                      	
+<td>url to pdf</td>
+
+
+                        <td><a href="https://alpin-api1.herokuapp.com/api/render?url=kasi-link-nya-bg&attachmentName=taruh-nama-lu-di%20sini" class="btn btn-sm btn-primary">Visit</a></td>
+
+
+                        <td>Active</td>
+                      <tr>          
+
+
+
+
+                      </tr>
+
+                    </tbody>
+
+
+                  </table>
+
+
+                </div>
+
+
+                <div class="card-footer"></div>
+
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+
+
+
+
+	
+
+
+      </div>
+
+
+      
+
+
+      
+
+
+
+
+
+      <!-- Footer -->
+
+
+      <footer class="sticky-footer bg-white">
+
+
+        <div class="container my-auto">
+
+
+          <div class="copyright text-center my-auto">
+
+
+            <span>apikey di reset setiap 00:00 tergantung dari limit apikeynya
+
+
+              <b><a href="https://instagram.com/alpinnigan" target="_blank">alpin - Api's</a></b>
+
+
+            </span>
+
+
+          </div>
+
+
+        </div>
+
+
+      </footer>
+
+
+      <!-- Footer -->
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <!-- Scroll to top -->
+
+
+  <a class="scroll-to-top rounded" href="#page-top">
+
+
+    <i class="fas fa-angle-up"></i>
+
+
+  </a>
+
+
+
+
+
+   
+
+</body>
+
+
+<script>
+
+
+  function getvisitor(){
+
+
+              var xhr = new XMLHttpRequest();
+
+
+              var url = 'https://api.countapi.xyz/hit/alpin-api.herokuapp.com/visits';
+
+
+              xhr.onloadend = function(){
+
+
+             data = JSON.parse(this.responseText);
+
+
+  document.getElementById("visitor").textContent = data.value
+
+
+              };
+
+
+              xhr.open("GET", url, true);
+
+
+              xhr.send();
+
+
+  }
+
+
+  
+
+
+</script>
+
+
+<script type="text/javascript">
+
+
+// 1 detik = 1000
+
+
+window.setTimeout("waktu()",1000);  
+
+
+function waktu() {   
+
+
+var tanggal = new Date();  
+
+
+setTimeout("waktu()",1000);  
+
+
+document.getElementById("jam").innerHTML = tanggal.getHours()+":"+tanggal.getMinutes()+":"+tanggal.getSeconds();
+
+
+}
+
+
+</script>
+
+
+<script>
+
+
+				// Akhir Hitungan Mundur
+
+
+				var countDownDate = new Date("May 13, 2021 00:00:00").getTime();
+
+
+
+
+
+				// Update Hitungan Mundur Setiap 1 Detik
+
+
+				var x = setInterval(function() {
+
+
+
+
+
+					// Mengambil Tanggal Dan Waktu
+
+
+					var now = new Date().getTime();
+
+
+
+
+
+					// Find the distance between now and the count down date
+
+
+					var distance = countDownDate - now;
+
+
+
+
+
+					// Kalkulator Waktu Hari, Jam, Menit, Detik 
+
+
+					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+
+					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+
+					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+
+					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+
+
+
+					// Menampilkan Hasil Di Dalam element Menggunakan id="time"
+
+
+					document.getElementById("time").innerHTML = days + "Hari  " + hours + "Jam " + minutes + "Menit " + seconds + "Detik ";
+
+
+
+
+
+					// Ketika countdown timer sudah berakhir Maka Tulisan Berakhir
+
+
+					if (distance < 0) {
+
+
+						clearInterval(x);
+
+
+						document.getElementById("time").innerHTML = "Berakhir";
+
+
+					}
+
+
+				}, 1000);
+
+
+			</script>
+
+
+
+
+
+<script> 
+
+
+
+
+
+			var batteryLevel = document.getElementById("batteryLevel");
+
+
+
+
+
+			var styleBatteryLevel = batteryLevel.style;
+
+
+
+
+
+			var percentageLevel = document.getElementById("percentageLevel");
+
+
+
+
+
+			navigator.getBattery().then(function(battery) {
+
+
+
+
+
+				
+
+
+
+
+
+			function updateAllBatteryInfo(){
+
+
+
+
+
+			updateLevelInfo();
+
+
+
+
+
+			}
+
+
+
+
+
+			updateAllBatteryInfo();
+
+
+
+
+
+			battery.addEventListener('levelchange',      function(){
+
+
+
+
+
+			setInterval(function(){
+
+
+
+
+
+			updateLevelInfo()
+
+
+
+
+
+			},1000);
+
+
+
+
+
+			});
+
+
+
+
+
+			
+
+
+
+
+
+			function updateLevelInfo(){
+
+
+
+
+
+			var numBattery = battery.level * 100;
+
+
+
+
+
+			percentageLevel.textContent=Math.round(numBattery) + "%";
+
+
+
+
+
+			styleBatteryLevel.height=numBattery + "%";
+
+
+
+
+
+			if(numBattery<=15) {
+
+
+
+
+
+			styleBatteryLevel.background="red";
+
+
+
+
+
+			}
+
+
+
+
+
+			};
+
+
+
+
+
+			});
+
+
+
+
+
+			</script>
+
+
+			
+
+
+			<script>
+
+
+     (adsbygoogle = window.adsbygoogle || []).push({});
+
+
+</script>   
+
+
+</div>
+
+
+</div>
+
+
+                  </div>
+
+
+<script>
+
+
+function toast(){
+
+
+
+
+
+iziToast.success({  
+
+
+    timeout: 3000,
+
+
+    transitionIn: 'fadeInUp',
+
+
+    transitionOut: 'fadeOut',
+
+
+    transitionInMobile: 'fadeInUp',
+
+
+    transitionOutMobile: 'fadeOutDown',
+
+
+    position: 'topRight',
+
+
+    title: 'Welcome!  di apikey Alpin',
+
+
+    message: 'Please read info below',
+
+
+});
+
+
+
+
+
+}
+
+
+window.setTimeout("waktu()", 1000);
+
+
+    function waktu() {
+
+
+        var waktu = new Date();
+
+
+        setTimeout("waktu()", 1000);
+
+
+        let strings = `${waktu.getHours()}:${waktu.getMinutes()}:${waktu.getSeconds()}`
+
+
+        document.getElementById("jam").textContent = strings
+
+
+    }
+
+
+const textnya = document.querySelector('.status'); 
+
+
+var apikey = document.getElementById("ampikey")
+
+
+</script>
+
+	<!-- Footer -->
+	<div class="footer transition">
+		<hr>
+		<p>
+			&copy; 2020 All Right Reserved by <a href="#" target="_blank">DWAdmin</a>
+		</p>
+	</div>
+
+	<!-- Loader -->
+	
+	<!-- Library Javascipt-->
+	<script src="assets/vendors/bootstrap/js/jquery.min.js"></script>
+	<script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+	<script src="assets/js/script.js"></script>
+ </body>
+</html>
