@@ -23,12 +23,16 @@ router.get('/menu-api', (req, res) => {
     res.sendFile(__path + '/menu-api.html')
 })
 
-router.get('/pembaruan-log', (req, res) => {
-    res.sendFile(__path + '/pembaruan-log.html')
+router.get('/topupmurah', (req, res) => {
+    res.sendFile(__path + '/topupmurah.html')
 })
 
 router.get('/api/news', (req, res) => {
     res.redirect('https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/Berita.json')
+})
+
+router.get('/pembaruan-log', (req, res) => {
+    res.sendFile(__path + '/pembaruan-log.html')
 })
 
 router.get('/config', (req, res) => {
